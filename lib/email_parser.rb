@@ -10,7 +10,7 @@ class EmailParser
 
   def parse
     return_array = []
-    return_array = @email.split(%r{,|\s})
+    return_array = @email.split(%r{,\s*|,|\s})
     return_array.uniq
   end
 end
